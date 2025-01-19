@@ -10,11 +10,14 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^4.2.4"
   },
+  "homepage": "https://basantadharala.github.io/food-recipe",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -35,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^3.4.17"
   }
 }
